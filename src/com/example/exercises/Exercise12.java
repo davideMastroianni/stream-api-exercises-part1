@@ -22,11 +22,7 @@ public class Exercise12 {
 
 	public static void main(String[] args) {
 		// Find the minimum, the maximum and the average population of each continent.
-		var populationSummaryByContinent = 
-			worldDao.findAllCountries()
-			        .stream()
-				    .collect(groupingBy(Country::getContinent, summarizingLong(Country::getPopulation)));
-		populationSummaryByContinent.forEach(printEntry);
+
 	}
 
 }

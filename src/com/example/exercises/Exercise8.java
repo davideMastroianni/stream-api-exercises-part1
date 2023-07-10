@@ -16,10 +16,7 @@ public class Exercise8 {
 
 	public static void main(String[] args) {
 		// Group the movies by the year and list them
-		var moviesByYear =
-		movieService.findAllMovies().stream()
-		            .collect(Collectors.groupingBy(Movie::getYear));
-		moviesByYear.forEach((year,movies) -> System.out.printf("%d: %s\n",year,movies));
+
 	}
 
 }

@@ -20,11 +20,7 @@ public class Exercise13 {
 
 	public static void main(String[] args) {
 		// Find the countries with the minimum and the maximum population
-		var countrySummaryStatistics = 
-				worldDao.findAllCountries()
-				        .stream()
-				        .collect(countrySummaryStatisticsSupplier, CountrySummaryStatistics::accept, CountrySummaryStatistics::combine);
-		System.out.println(countrySummaryStatistics);
+
 	}
 
 }

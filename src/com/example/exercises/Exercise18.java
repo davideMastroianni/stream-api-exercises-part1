@@ -18,14 +18,6 @@ public class Exercise18 {
 
 	public static void main(String[] args) {
 		// Find the year where the maximum number of movie is available
-        var movies = movieService.findAllMovies();
-        var maxMovieCountByYear = 
-          movies.stream()
-                .collect(groupingBy(Movie::getYear,counting()))
-        		.entrySet()
-        		.stream()
-        		.max(comparingByValue());
-        maxMovieCountByYear.ifPresent(System.out::println);
 	}
 
 }
